@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        axios({
+                method: 'post',
+                url: 'http://iotcloud.jhtwl.com:81/IoTWeb/Api/DataItem/ReadTree',
+                headers:{
+                    'Content-Type': 'application/json',
+                    'application': '83300002',
+                    'moduleid': '10010201',
+                    'modulekey': 'c3c36ef0e0af4dc2b3f68de64c249689',
+                    'timestamp': '1558926047422',
+                    'debug': 'ignored',
+                    'userId': '10',
+                    'signature': 'jhtsign'
+                },
+                data: {
+                    parentid:"0"
+                    // Parentcode: '',
+                    // beglevel:"1",
+                    // endlevel:"30"
+                }
+            }).then(function (response) {
+                console.log(response);
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">a</div>
+</body>
+</html>

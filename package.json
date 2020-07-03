@@ -1,0 +1,114 @@
+{
+  "name": "tocc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.9.18",
+    "@antv/l7": "^2.1.15",
+    "@antv/l7-maps": "^2.1.15",
+    "animate.css": "^3.7.2",
+    "core-js": "^2.6.5",
+    "dayjs": "^1.8.22",
+    "echarts": "^4.2.1",
+    "echarts-liquidfill": "^2.0.5",
+    "element-ui": "^2.13.0",
+    "hover.css": "^2.3.2",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.11",
+    "magic.css": "^1.4.5",
+    "mockjs": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "qs": "^6.9.1",
+    "sass-resources-loader": "^2.0.1",
+    "swiper": "^5.3.6",
+    "vue": "^2.6.10",
+    "vue-awesome-swiper": "^4.0.4",
+    "vue-count-to": "^1.0.13",
+    "vue-echarts": "^4.0.3",
+    "vue-router": "^3.0.3",
+    "vue-video-player": "^5.0.2",
+    "videojs-contrib-hls": "^5.15.0",
+    "videojs-flash": "^2.2.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-axios": "^0.0.4",
+    "vue-cli-plugin-postcss-preset": "^1.0.2",
+    "vue-cli-plugin-pxtorem": "^1.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-preset-env": {
+        "stage": 2
+      },
+      "postcss-pxtorem": {
+        "rootValue": 100,
+        "unitPrecision": 5,
+        "propList": [
+          "font",
+          "font-size",
+          "line-height",
+          "width",
+          "height",
+          "background-size",
+          "margin",
+          "margin-top",
+          "margin-bottom",
+          "margin-left",
+          "margin-right",
+          "padding-top",
+          "padding-bottom",
+          "padding-left",
+          "padding-right",
+          "padding",
+          "box-shadow",
+          "text-shadow",
+          "top",
+          "left",
+          "border",
+          "bottom",
+          "right",
+          "flex-basis",
+          "letter-spacing"
+        ]
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "ie > 11",
+    "last 2 versions"
+  ]
+}

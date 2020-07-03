@@ -1,0 +1,308 @@
+$base-border-color:rgba(32, 86, 221, .4);
+$base-border:1px solid $base-border-color;
+$base-panel-title-fontSize:16px;
+$base-panel-title-color:red;
+$base-font-font-family:MicrosoftYaHei;
+$base-color-white:#ffffff;
+
+
+
+
+// 面板相关属性初始值
+$panel-border: 1px solid #2056dd;
+$panel-border-color: #2056dd;
+$panel-width: 410px;
+
+$panel-padding-left:20px;
+$base-color:rgba(32, 86, 221, 1);
+$noMapBgColor:rgba(32, 86, 221, .2);
+
+
+.main-content-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+
+// 上下左右居中
+@mixin allCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 上下左右居中
+@mixin linearGradient($width, $height, $deg, $startColor, $endColor) {
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    background: linear-gradient(180deg, $startColor, $endColor);
+}
+
+// 垂直居中
+@mixin v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// 水平居中 horizontal-center
+@mixin h-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-map-menu {
+    z-index: 99999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.el-table {
+    color: $base-color-white;
+}
+
+.el-pagination__total {
+    color: $base-color-white;
+}
+
+.el-select-dropdown__item {
+    color: $base-color-white
+}
+
+.el-pagination {
+    color: $base-color-white;
+}
+
+.el-button {
+    color: $base-color-white;
+}
+
+.el-dialog__body {
+    max-height: 59vh;
+    overflow-y: auto;
+}
+
+.strip-odd {
+    background-color: rgba(0, 0, 0, 1) !important;
+    opacity: 0.4;
+}
+
+.el-table th.is-leaf,
+.el-table td {
+    border-bottom: 0 !important;
+}
+
+.el-button--primary {
+    background-color: rgba(32, 86, 221, 1);
+    border-color: rgba(32, 86, 221, 1);
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: rgba(32, 86, 221, .6) !important;
+}
+
+.el-dialog {
+    background-color: rgba(32, 86, 221, .8) !important;
+    color: #fff;
+}
+
+.sub {
+    margin: 10px 0;
+}
+
+.detail-form-label {
+    color: #fff;
+    width: 130px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.detail-form-content {
+    color: #fff;
+}
+
+
+
+html,
+body {
+    font-family: PingFangSC,
+        helvetica neue,
+        hiragino sans gb,
+        arial,
+        microsoft yahei ui,
+        microsoft yahei,
+        simsun,
+}
+
+.wrapper>.item>a {
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.base-content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.map-content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.item-content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.button-wrap>.button:not(:first-child)>button {
+    background: rgba(32, 86, 221, .4);
+    border: 0;
+}
+
+.subMenuActive {
+    background-color: rgb(32, 86, 221) !important;
+}
+
+/***     全局设置谷歌浏览器滚动条样式               **/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #555;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+}
+
+.slide-fade-enter-active {
+    transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+
+}
+
+.slide-fade-enter {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.slide-fade-enter-to {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.video-js .vjs-big-play-button {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translateX(-50%) !important;
+    transform: translateY(-50%) !important;
+    ;
+}
+
+.leftMenuActive {
+    background: rgba(32, 86, 221, .4);
+}
+
+.dialog-wrapper {
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    border: 1px solid red;
+}
+
+.table-detail-btn {
+    border: 1px solid rgba(32, 86, 221, 1) !important;
+    // width:40px;
+    // height:20px;
+    background: rgba(32, 86, 221, 1) !important;
+    border-radius: 2px;
+}
+
+.el-input__inner:focus {
+    outline: none;
+    border-color: rgb(32, 86, 221) !important;
+}
+
+.el-input__inner:hover {
+    border-color: rgb(32, 86, 221) !important;
+}
+
+.el-select-dropdown {
+    border-color: rgba(32, 86, 221, .6) !important;
+}
+
+.el-date-table td.in-range div {
+    background-color: rgba(32, 86, 221, .2) !important;
+}
+
+.el-date-table td.in-range div span {
+    color: #ffffff !important;
+}
+
+.el-date-table td.today span {
+    color: rgb(32, 86, 221) !important;
+    font-weight: bold;
+}
+
+.el-picker-panel,
+.el-date-range-picker,
+.el-popper,
+.has-sidebar {
+    border: 1px solid rgb(32, 86, 221) !important;
+}
+
+.el-picker-panel__sidebar {
+    border: 1px solid rgb(32, 86, 221) !important;
+}
+
+.el-date-range-picker__content.is-left {
+    border-right: 1px solid rgb(32, 86, 221) !important;
+}
+
+.el-date-table th {
+    border-bottom: 1px solid rgb(32, 86, 221) !important;
+}
+
+.el-picker-panel {
+    color: #fff !important;
+}
+
+.el-date-table th {
+    color: #ffffff !important;
+}
+
+.el-picker-panel__shortcut {
+    color: rgb(191, 203, 217) !important;
+}
+
+.el-picker-panel__shortcut:hover {
+    color: rgb(32, 86, 221) !important;
+}

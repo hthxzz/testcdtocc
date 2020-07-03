@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Kizo-Light-4";
+  src: url("Kizo-Light-4.woff2") format("woff2"),
+       url("Kizo-Light-4.woff") format("woff"),
+       url("Kizo-Light-4.ttf") format("truetype"),
+       url("Kizo-Light-4.eot") format("embedded-opentype"),
+       url("Kizo-Light-4.svg") format("svg"),
+       url("Kizo-Light-4.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,15 @@
+*{padding:0px;margin:0px;}
+.ssfw{background:#e9f3f4;margin-bottom:5px;padding-bottom:10px;height:73px;}
+.ssfw lable{margin-left:10px;padding-top:10px;display:block;height:8px;}
+.ssfw lable,.ssfw span{font-size:14px;cursor:pointer;}
+.ssfw input{margin-left:5px;float:left;}
+.ssfw span{color:#666;margin-right:10px;display:block;float:left;line-height:12px;}
+.ssfw input.first_ipt{margin-left:10px;}
+.omap-context-menu{background:rgba(255,255,255,.9);min-width:200px;border-radius:2px;box-shadow:0px 2px 4px #ccc;padding-bottom:10px;}
+.yj_list li{padding-left:40px;font-size:14px;color:#333;list-style:none;display:block;height:34px;line-height: 34px;padding-right:10px;}
+.yj_list li:hover{background-color:#e9f3f4;cursor:pointer;}
+.yj_lx{background: url(img/yj_lx.png) 10px center no-repeat;}
+.yj_sxt{background: url(img/yj_sxt.png) 10px center no-repeat;}
+.yj_jcss{background: url(img/yj_jcss.png) 10px center no-repeat;}
+.yj_yjzy{background: url(img/yj_yjzy.png) 10px center no-repeat;}
+.yj_fjsj{background: url(img/yj_sj.png) 10px center no-repeat;}
